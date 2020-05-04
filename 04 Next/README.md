@@ -2,18 +2,14 @@
 Content for the course
 
 
-## ML Introduction
+## Introduction
   * Definition of Machine Learning
   * Artificial Intelligence vs. Machine Learning vs. Deep Learning
   * Machine Learning Workflow steps to provide structured approach to creating solutions.
-More info [here](00 Introduction/README.md)
 
-
-## Machine Learning Fundamentals
+## Machine Learnning
   * Basic ML concept including training, inference, overfit, underfit
   * Machine Learning high-level classification: supervised learning vs. unsupervised learning
-More info [here](01 Fundamentals/README.md)
-
 
 ## Tooling
   * Brief overview and intro of Google’s ML products and technologies: TF2.x, TPU, Colab, Kaggle...
@@ -21,16 +17,13 @@ More info [here](01 Fundamentals/README.md)
   * Neural Network playground: https://playground.tensorflow.org/
   * MNIST or Fashion MNIST lab using TF2.0 on Colab
   * Tensor Board
-More info [here](02 Tooling/README.md)
 
-## ML Advanced topics
+## Advance topics
   * The importance of quality data: where the bias comes from
   * ML explainability: why this is hard
   * Why developers need to understand AI principles: https://ai.google/principles/
   * TFData
   * Pipelines
-More info [here](03 Advanced/README.md)
-
 
 ## Next Steps
   * Guide to the next step learning
@@ -39,11 +32,3 @@ More info [here](03 Advanced/README.md)
     * Auto ML
     * Cloud ML APIs
     * ML BigQuery
-More info [here](04 Next/README.md)
-
-
-
-## References
-  * This section will include list of references
-More info [here](05 References/README.md)
-
