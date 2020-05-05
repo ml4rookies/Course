@@ -40,3 +40,6 @@ All TPU types use the same data-parallel architecture. The only change is that t
 To take full advantage of larger numbers of TPUs, you must tune several training task parameters. Refer to [this document](https://cloud.google.com/tpu/docs/training-on-tpu-pods?hl=en#overview) to see the changes.
 
 Note evaluation is neither supported nor cost-effective on TPU pods.
+
+Back to the [Index](../README.md)
+
