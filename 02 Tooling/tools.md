@@ -48,3 +48,5 @@ More information and download [here](http://yann.lecun.com/exdb/mnist/).
 **Fashion-MNIST database** is a dataset by Zalando, containing images of articles, with 10 classes and 60,000 examples for training and 10,000 examples for testing. Each example is a 28x28 grayscale image, associated with a label from 10 classes. Fashion MNIST tries to be a replacement of rthe original MNIST. 
 
 More information and is available [here](https://github.com/zalandoresearch/fashion-mnist). 
+
+Back to the [Index](../README.md)
