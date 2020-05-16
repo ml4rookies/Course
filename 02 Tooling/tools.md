@@ -33,6 +33,11 @@ After training, you can save your project entirely to Google Drive, in a .zip fi
 |:--:| 
 | *Figure: Teachable machine* |
 
+## Kaggle
+
+[Kaggle](https://www.kaggle.com/), subsidiary of Google, is an online community of data scientists and machine learning practitioners.   
+Kaggle allows users to find and publish data sets, explore and build models in a web-based data-science environment, work with other data scientists and machine learning engineers, and enter competitions to solve data science challenges.  
+Kaggle got its start in 2010 by offering machine learning competitions and now also offers a public data platform, a cloud-based workbench for data science, and Artificial Intelligence education. 
 
 ## MNIST and Fashion MNIST datasets
 
