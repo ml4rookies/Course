@@ -1,5 +1,5 @@
 The Tensor Processing Unit (TPU) is a custom ASIC chip, designed by Google, **mainly designed for training** neural networks, although can also do inference.
-It's currently in production in several Google consumer products, like email, YouTube and others. It's also available in Google Cloud Platform and some research products like [Colab])(./colab.md).
+It's currently in production in several Google consumer products, like email, YouTube and others. It's also available in Google Cloud Platform and some research products like [Colab])(colab.md).
 It can be used not only by TensorFlow, but also by other deep learning frameworks like [PyTorch](https://cloud.google.com/tpu/docs/tutorials/pytorch-pod).
 
 But what's the difference between a CPU, a GPU and a TPU ? You can access to this [demo site](https://storage.googleapis.com/nexttpu/index.html) or to [this link](https://cloud.google.com/blog/products/ai-machine-learning) to know more, but here is a quick summary:
