@@ -1,3 +1,5 @@
+## Introduction to Colab
+
 Colab allows to run and program Python in your browser, with no installations. Main features include:
 * No configuration or setup required
 * Free GPU and TPU access.
