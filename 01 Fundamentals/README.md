@@ -1,5 +1,7 @@
 # Machine Learning Fundamentals
 
+Link: https://docs.google.com/document/d/10TD3dHNesN6buXOvuRMEY55HC6MbGWCa69MgbnKIX3c/edit?usp=sharing
+
   * [Artificial Intelligence](#Artificial-Intelligence)
     * Definition: overall introduction using the fourth quadrants, and then general categories problem solving, knowledge, reasoning and planning and learning and perciving and acting i.e. robotics
     * Foundation
