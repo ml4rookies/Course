@@ -1,7 +1,5 @@
 # Machine Learning Fundamentals
 
-Link: https://docs.google.com/document/d/10TD3dHNesN6buXOvuRMEY55HC6MbGWCa69MgbnKIX3c/edit?usp=sharing
-
   * [Artificial Intelligence](#Artificial-Intelligence)
     * Definition: overall introduction using the fourth quadrants, and then general categories problem solving, knowledge, reasoning and planning and learning and perciving and acting i.e. robotics
     * Foundation
@@ -72,6 +70,8 @@ The current significan development of the field might be related to several aspe
   * Masive digitalization of our world contributing to the production of huge amount of training data.
 
 ## Machine Learning
+
+Link: https://docs.google.com/document/d/10TD3dHNesN6buXOvuRMEY55HC6MbGWCa69MgbnKIX3c/edit?usp=sharing
 
 ### Solving Problems without Algorithms
 The difference in Machine Learning and general algorithmic approach is that algorithms give out a definite answer. While machine learning tries to approximate an answer. So traditionally we give rules and input and produce an answer. But in Machine Learning we give input and answer to get the rules to answer for unseen input.
