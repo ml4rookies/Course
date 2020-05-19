@@ -260,7 +260,7 @@ Some of the most modern research is being done in TensorFlow. Specifically in
 * Sentiment analysis
 * Text summarization
 * Mobile image and video processing
-
+https://docs.google.com/document/d/10TD3dHNesN6buXOvuRMEY55HC6MbGWCa69MgbnKIX3c/edit?usp=sharing
 
 
 Back to the [Index](../README.md)
