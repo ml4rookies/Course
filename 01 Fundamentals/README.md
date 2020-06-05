@@ -20,8 +20,8 @@
       * Sequential 
       * LSTM
     * Federated Learning
-  * Tensorflow 2.0
-    * What is Tensorflow?
+  * TensorFlow 2
+    * What is TensorFlow?
       * Easy model building
       * Robust ML production anywhere
       * Powerful for research
@@ -75,30 +75,30 @@ Link: https://docs.google.com/document/d/10TD3dHNesN6buXOvuRMEY55HC6MbGWCa69Mgbn
 
 ### Solving Problems without Algorithms
 The difference in Machine Learning and general algorithmic approach is that algorithms give out a definite answer. While machine learning tries to approximate an answer. So traditionally we give rules and input and produce an answer. But in Machine Learning we give input and answer to get the rules to answer for unseen input.
-![image](https://drive.google.com/uc?export=view&id=1JlpfK8e3_hJqz46hLT4Hyqg-KfylPLuF)
+![image](images/image_1.png)
 
-To explain this, let’s give an example;
+To understand this in a bit more detail, let’s take an example. 
 
-![image](https://drive.google.com/uc?export=view&id=1gaDS25qYRcJBJ8KwRppOha6crFBpbJIc)
+![image](images/image_2.png)
 
 The answer to this is easy. We made a general rule on our own. But what if we are given to convert Celsius to Fahrenheit without using the formula. A machine learning solution that approximates the function that converts input to output.
-![image](https://drive.google.com/uc?export=view&id=1WfFGLBzFux7YbTi-uNSFIePblbxv07nc)
-![image](https://drive.google.com/uc?export=view&id=1uXkUVTQQmKWSjNY7SSJbjgQKdkj1PZ8l)
+![image](images/image_3.png)
+![image](images/image_4.png)
 
 
 #### Supervised Learning
 Supervised learning is a part of Machine Learning where for each example, we are given its features and the observed label.
-![image](https://drive.google.com/uc?export=view&id=1L5xfmeCYxOVxGzs8RUdhUqzCjZcEZCad)
+![image](images/image_5.png)
 
 During training, the model learns the different patterns in apples and cupcakes.  During prediction, based on the learned patterns, the model is able to tell whether it’s an apple or a cupcake. 
 
 #### Unsupervised Learning
 Unsupervised learning is a part of Machine Learning where for each example, we are given its features only and no observed (label) value is provided.
-![image](https://drive.google.com/uc?export=view&id=1Qcn_NUTmUDaCCweMl8ny8_LjZIuIsrpS)
-During training, the model learns the different patterns in the raw data.  Based on similarities in the data it forms clusters. During prediction, based on similarity (between input and the different clusters), it assigns the closest cluster to the input.
+![image](images/image_6.png)
+During training, the model captures the different patterns in the raw data.  Based on similarities in the data it forms clusters. During prediction, based on similarity (between input and the different clusters), it assigns the closest cluster to the input.
 
 #### Supervised Learning vs Unsupervised Learning
-![image](https://drive.google.com/uc?export=view&id=1SY34AiXCvkeNm9E6l4gaWXS94NHm5bao)
+![image](images/image_7.png)
 
 | Problem  | Solutions |
 | ------------- | ------------- |
@@ -112,15 +112,15 @@ Regression accounts for the problems where the prediction value could be in the 
 
 
 Linear regression performs the task to predict a dependent variable value (y) based on a given independent variable (x). So, this regression technique finds out a linear relationship between x (input) and y(output).
-![image](https://drive.google.com/uc?export=view&id=1MwWbF5yeliHG00JyGvK6dSdLczG6tDkJ)
+![image](images/image_8.png)
 
-You want to predict house prices (dependent variable Y) based on ‘square feet’ (the independent variable X). You have a number of examples of house square feet and their corresponding prices. One solution is to find the best fit line. But how do you define the best fit line? 
+You want to predict house prices (dependent variable Y) based on ‘square feet’ (the independent variable X). You have a number of examples of house square feet and their corresponding prices. One solution is to find the best fit line. _But how do you define the best-fit line_? 
 
-We can see from the diagram above that X and Y will follow a relation of Y= mX + c which can also be mapped as Y= wX + b.
+We can see from the diagram above that X and Y will follow a relation of $$Y = mX + c$$ which can also be mapped as $$Y = wX + b$$.
 
 The best fit line will have the lowest error. How can we define error? 
-We can define the error as the sum of the distance between each point and the line. Mathematically this can be modelled for each data sample as abs(Y - Y_predicted).
-![image](https://drive.google.com/uc?export=view&id=1a0VPTqyE4WfLeDSLe0o-OFO1FJt8c5rm)
+We can define the error as the sum of the distance between each point and the line. Mathematically, this can be modelled for each data sample as abs(Y - Y_predicted).
+![image](images/image_9.png)
 
 
 #### Classification
@@ -129,9 +129,8 @@ Finite
 Predefined
 Differentiable from other classes
 
-An example is, you are given a problem to identify from a given image, whether it’s an image of a dog or a cat. In this example the class values are finite. That is two in number. Predefined, the model cannot predict anything other than a cat or a dog. 
-And both classes are different from each other.
-![image](https://drive.google.com/uc?export=view&id=1MxR3ue4eOj8O6RRSHFassp5KH4t8lqH1)
+An example is, you are given a problem to identify from a given image, whether it’s an image of a dog or a cat. In this example the class values are finite. That is two in number. Predefined, the model cannot predict anything other than a cat or a dog. And both classes are different from each other.
+![image](images/image_10.png)
 
 
 | Problem | Solution | Supervised ML ALgorithm |
@@ -143,13 +142,13 @@ And both classes are different from each other.
 
 #### Parametric vs Non-Parametric
 We can classify a machine learning algorithm as either ‘parametric’ or ‘non-parametric’.
-![image](https://drive.google.com/uc?export=view&id=16EJ8LX6kwUuyD64kuZwoszLxRrYcbtY4)
+![image](images/image_11.png)
 
 ***Parametric Machine Learning***
 
 In a parametric algorithm, the number of parameters is fixed with respect to the sample size. The number of parameters do not increase with the increase in data sample size. A parametric algorithm is hence computationally faster, but it makes stronger assumptions about the data; as a result, the model may perform well if the assumptions were correct, and perform poorly if the assumptions turn out to be incorrect. Linear Regression is an example of a parametric algorithm.
 
-As we saw in the example of linear regression above, there were two parameters ‘w’ and ‘b’ and Y & X were following the relationship of Y=wX+b. Whether the number of data samples is 100 or 500, the relationship for linear regression between independent and dependent variables will remain the same and there will still be only two parameters. The number of parameters won’t change with the increase in data sample size. 
+As we saw in the example of linear regression above, there were two parameters ‘w’ and ‘b’ and Y & X were following the relationship of $$Y = wX+b$$. Whether the number of data samples is 100 or 500, the relationship for linear regression between independent and dependent variables will remain the same and there will still be only two parameters. The number of parameters won’t change with the increase in data sample size. 
 
 ***Non-Parametric Machine Learning***
 
@@ -158,13 +157,12 @@ In contrast, a non-parametric algorithm uses a flexible number of parameters, an
 #### Automated Machine Learning (AutoML)
 
 Automated machine learning (AutoML) is the process of automating the process of applying machine learning to real-world problems. AutoML covers the complete pipeline from the raw dataset to the deployable machine learning model. AutoML was proposed as an artificial intelligence-based solution to the ever-growing challenge of applying machine learning. The high degree of automation in AutoML allows non-experts to make use of machine learning models and techniques without requiring to become an expert in this field first.
-![image](https://drive.google.com/uc?export=view&id=1HDnwsbelDOcviNPSLgjbp9uEJRX-VZQQ)
+![image](images/image_12.png)
 
 
 
-
-## TensorFlow 2.0
-![image](https://drive.google.com/uc?export=view&id=17Ss-2OuFx-vpk2GgV8WJx1NHKSSN0F7K)
+## TensorFlow 2
+![image](images/image_13.png)
 
 ### What is TensorFlow?
 TensorFlow is an end-to-end open-source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML-powered applications.
@@ -177,27 +175,26 @@ TensorFlow also provides a Lite version for mobile and IoT devices. And provides
 * TensorFlow Extended is an end-to-end platform for preparing data, training, validating, and deploying models in large production environments.
 
 Whether you’re an expert or a beginner, TensorFlow is an end-to-end platform that makes it easy for you to build and deploy ML models.
-![image](https://drive.google.com/uc?export=view&id=1P8AcKf6weagvfoaCOc44nU4bwJv2um4Y)
-![image](https://drive.google.com/uc?export=view&id=1HtcNhb8McbXIU7chO198hQ76cHgAqVjm)
+![image](images/image_14.png)
+![image](images/image_15.png)
 
 
 ***Tensorboard***
 TensorBoard is a brilliant tool that enables visualizing your ML models directly in your browser.
-![image](https://drive.google.com/uc?export=view&id=1nWLpkh4hKW9WxRfhkk-gO8qCf6dbVNNs)
+![image](images/image_16.png)
 
 ***TensorFlow Lite***
 TensorFlow Lite is an open source deep learning framework for on-device inference.
-![image](https://drive.google.com/uc?export=view&id=1tAe-EM7nTTr-2Rj9DfB_81o2eEimof0N)
+![image](images/image_17.png)
 
 ***TensorFlow JS***
 With TensorFlow.js you can develop ML models on your browser using only Node.js
-![image](https://drive.google.com/uc?export=view&id=1IIOdNQY0JvORsvud_p9kQRAAt41CB19q)
-
+![image](images/image_18.png)
 
 
 
 #### Easy model building
-Build and train ML models easily using intuitive high-level APIs like Keras with eager execution, which makes for immediate model iteration and easy debugging.
+Build and train ML models easily using intuitive high-level APIs like Keras with eager execution, which helps for immediate model iteration and easy debugging.
 
 #### Robust ML production anywhere
 Easily train and deploy models in the cloud, on-prem, in the browser, or on-device no matter what language you use.
@@ -207,9 +204,9 @@ A simple and flexible architecture to take new ideas from concept to code, to st
 
 
 ### Keras
-![image](https://drive.google.com/uc?export=view&id=1NqqkVVm6ifK9BrjSrOpsXLzanumhgbdy)
+![image](images/image_19.png)
 
-tf.keras in TensorFlow's high-level API for building and training deep learning models. It's used for fast prototyping, state-of-the-art research, and production, with three key advantages:
+Keras or more popularly known as `tf.keras` in TensorFlow's high-level API for building and training deep learning models. It's used for fast prototyping, state-of-the-art research, and production, with three key advantages:
 * User-friendly - Keras has a simple, consistent interface optimized for common use cases. It provides clear and actionable feedback for user errors.
 * Modular and composable - Keras models are made by connecting configurable building blocks together, with few restrictions.
 * Easy to extend - Write custom building blocks to express new ideas for research. Create new layers, metrics, loss functions, and develop state-of-the-art models
@@ -227,34 +224,35 @@ A Sequential model is not appropriate when:
 #### Functional API
 The Keras functional API provides a more flexible way for defining models.
 
-It specifically allows you to define multiple input or output models as well as models that share layers. More than that, it allows you to define ad hoc acyclic network graphs.
+It specifically allows you to define multiple input or output models as well as models that share layers. More than that, it allows you to define ad-hoc acyclic network graphs which are really useful when dealing with multi-modal inputs.
 
 Models are defined by creating instances of layers and connecting them directly to each other in pairs, then defining a Model that specifies the layers to act as the input and output to the model.
 
 
 ### Components
-![image](https://drive.google.com/uc?export=view&id=1VwIjpCAchgC-Cew-n9ZlIfxap-eldyVf)
+![image](images/image_20.png)
 
 #### TensorFlow Datasets
 TensorFlow Datasets is a collection of datasets ready to use, with TensorFlow or other Python ML frameworks, such as Jax. All datasets are exposed as tf.data.Datasets , enabling easy-to-use and high-performance input pipelines. We can see that it’s a mid level TensorFlow API.
 
 #### TensorFlow Hub
-![image](https://drive.google.com/uc?export=view&id=1yGPCQxezrWDwx_b7O79EWW2cOJl-lmSM)
+![image](images/image_20.png)
 
-TensorFlow Hub is a library for the publication, discovery, and consumption of reusable parts of machine learning models. A module is a self-contained piece of a TensorFlow graph, along with its weights and assets, that can be reused across different tasks in a process known as transfer learning. Transfer learning can:
-* Train a model with a smaller dataset,
-* Improve generalization, and
-* Speed up training
-![image](https://drive.google.com/uc?export=view&id=1LaRG3k1_f6LVqqE4KoDAzkqqB-4BVFMc)
+TensorFlow Hub is a library for the publication, discovery, and consumption of reusable parts of machine learning models. A module is a self-contained piece of a TensorFlow graph, along with its weights and assets, that can be reused across different tasks in a process known as transfer learning. Transfer learning can help us:
+* Training models with less data
+* Improving generalization
+* Speeding up training
+
+![image](images/image_21.png)
 
 #### Model Garden
-![image](https://drive.google.com/uc?export=view&id=1o6xkAEAWVNkexIB4i3IhUKacBZ1DrIiZ)
+![image](images/image_22.png)
 The Model Garden aims to demonstrate the best practices for modeling so that TensorFlow users can take full advantage of the recent TensorFlow 2 for their research and product development. TensorFlow Hub will keep playing its role as a repository where people can easily search for ready-to-use pre-trained models. We plan to increasingly make more state-of-the-art models from the Model Garden available in TensorFlow Hub, and TensorFlow Hub pages will link to the model implementations in the Model Garden.
 
-### Use Cases
+### Use-cases
 TensorFlow, because of its components and production built capabilities is widely used in both real world and research based solutions and products.
 After TFLite and TFJs, these use cases have increased. 
-Some of the most modern research is being done in TensorFlow. Specifically in 
+Some of the most modern (and highly practical) research is being done in TensorFlow. Specifically in the areas like below
 * Speech recognition
 * Image recognition
 * Object tagging videos
