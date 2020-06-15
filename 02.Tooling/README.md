@@ -7,7 +7,7 @@
    * Other notebook environments
 * [Tensorflow Playground](#Tensorflow-Playground)
 * [Teacheable Machine](#Teachable-Machine)
-* [Kaggke](#Kaggle)
+* [Kaggle](#Kaggle)
 * [MNIST and Fashion MNIST datasets](#MNIST-and-Fashion-MNIST-datasets)
 * [TPU](#TPU)
    * TPU types
