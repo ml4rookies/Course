@@ -333,13 +333,87 @@ in fact the model fails to capture a saturation effect (at some point,
 sales will flatten out no matter how much more you spend on marketing).
 ([[Ref]](https://www.datarobot.com/wiki/underfitting/))
 
+### Activation Function
+
+We talked about a basic unit called neuron above. Each neuron takes a
+weighted sum + bias of the input. The resultant value can range from
+anything between -inf to +inf. Then how do you decide whether to
+activate the neuron or not?
+
+This is where Activation Functions are used. An activation function is
+applied to the resultant value to decide whether or not to 'activate'
+the particular neuron.
+
+![image](images/image_35.png)
+
+The purpose of the activation function is to introduce non-linearity
+into the output of a neuron. This is important because most real-world
+data is non-linear and we want neurons to learn these nonlinear
+representations.
+
+#### Types of Activation Functions:
+
+##### Sigmoid 
+
+It takes a real-valued input and squashes it to range between 0 and 1
+
+σ(x) = 1 / (1 + exp(−x))
+
+![image](images/image_36.png)
+
+Ref: Wikipedia
+
+If you notice, towards either end of the sigmoid function, the Y values
+tend to respond very less to changes in X. What does that mean? The
+gradient at that region is going to be small. It gives rise to a problem
+of **vanishing gradients**. The gradient is small or has vanished. The
+network refuses to learn further or is drastically slow, as it cannot
+make significant changes in parameters as a result of the extremely
+small changes in gradients.
+[[Ref]](https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0)
+
+##### TanH
+
+Another activation function that is used is the tanh function.
+
+![image](images/image_37.png)
+
+[[Ref]](https://www.medcalc.org/manual/tanh_function.php)
+
+Tanh has a steeper gradient than sigmoid but like sigmoid, tanh also has
+vanishing gradient problems.
+
+##### Relu
+
+ReLU stands for Rectified Linear Unit. It takes a real-valued input and
+thresholds it at zero (replaces negative values with zero)
+
+f(x) = max(0, x)
+
+![image](images/image_38.png)
+
+[[Ref]](https://www.google.com/url?sa=i&url=https%3A%2F%2Fsebastianraschka.com%2Ffaq%2Fdocs%2Frelu-derivative.html&psig=AOvVaw2bGFiAuTL82WOGVpduIpsl&ust=1591125596418000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIDZnvuq4ekCFQAAAAAdAAAAABAs)
+
+Relu solves the vanishing gradient problem.
+
+##### LeakyRelu
+
+A Rectified Linear Unit (A unit employing the rectifier is also called a
+rectified linear unit ReLU) has output 0 if the input is less than 0,
+and raw output otherwise. That is, if the input is greater than 0, the
+output is equal to the input. The operation of ReLU is closer to the way
+our biological neurons work.
+
+![image](images/image_39.png)
+
+[[Ref]](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.i2tutorials.com%2Fdeep-learning-interview-questions-and-answers%2Fexplain-step-threshold-and-leaky-relu-activation-functions%2F&psig=AOvVaw2bGFiAuTL82WOGVpduIpsl&ust=1591125596418000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIDZnvuq4ekCFQAAAAAdAAAAABAR)
 
 
 ### Automated Machine Learning (AutoML)
 
 Automated machine learning (AutoML) is the process of automating the process of applying machine learning to real-world problems. AutoML covers the complete pipeline from the raw dataset to the deployable machine learning model. AutoML was proposed as an artificial intelligence-based solution to the ever-growing challenge of applying machine learning. The high degree of automation in AutoML allows non-experts to make use of machine learning models and techniques without requiring to become an expert in this field first.
-![image](images/image_12.png)
 
+![image](images/image_12.png)
 
 
 ## TensorFlow 2
@@ -350,27 +424,80 @@ TensorFlow is an end-to-end open-source platform for machine learning. It has a 
 
 TensorFlow is a Machine Learning framework that allows the user to make an end to end machine learning pipeline. This includes data loading to data pre-processing, model building to training, visualization of training processes to the evaluation of models. And finally from these trained models to deploying them for a scalable prediction system either on-premises or on the cloud.
 
+
+![image](images/image_14.png)
+
 TensorFlow also provides a Lite version for mobile and IoT devices. And provides a wrapper for languages like Python, Swift and JavaScript.
 * TensorFlow.js is a JavaScript library for training and deploying models in the browser and on Node.js.
 * TensorFlow Lite is a lightweight library for deploying models on mobile and embedded devices.
 * TensorFlow Extended is an end-to-end platform for preparing data, training, validating, and deploying models in large production environments.
 
 Whether you’re an expert or a beginner, TensorFlow is an end-to-end platform that makes it easy for you to build and deploy ML models.
-![image](images/image_14.png)
+
+
 ![image](images/image_15.png)
 
 
 ***Tensorboard***
 TensorBoard is a brilliant tool that enables visualizing your ML models directly in your browser.
+
+In machine learning, to improve something you often need to be able to measure it. TensorBoard is a tool for providing the measurements and visualizations needed during the machine learning workflow. It enables tracking experiment metrics like loss and accuracy, visualizing the model graph, projecting embeddings to a lower-dimensional space, and much more.
+
+You can initialize and add TensorBoard as a callback in your code.
+When training with Keras's Model.fit(), adding the tf.keras.callbacks.TensorBoard callback ensures that logs are created and stored.
+
+![image](images/image_40.png)
+
+Start TensorBoard through the command line or within a notebook experience. The two interfaces are generally the same. In notebooks, use the %tensorboard line magic. On the command line, run the same command without "%".
+
+![image](images/image_41.png)
+
+
 ![image](images/image_16.png)
 
+When training with other methods such as tf.GradientTape(), tf.summary is used to log the required information, for the TensorBoard to monitor training as it progresses. (Reference)
+
+
+
 ***TensorFlow Lite***
-TensorFlow Lite is an open source deep learning framework for on-device inference.
+TensorFlow Lite is an open-source deep learning framework for on-device inference and can be used to deploy models on mobile and IoT devices. 
+
+TensorFlow Lite consists of two main components:
+
+* The TensorFlow Lite interpreter, which runs specially optimized models on many different hardware types, including mobile phones, embedded Linux devices, and microcontrollers.
+* The TensorFlow Lite converter, which converts TensorFlow models into an efficient form for use by the interpreter, and can introduce optimizations to improve binary size and performance.
+
+Performing machine learning on-device can help improve:
+
+* Latency: there's no round-trip to a server
+* Privacy: no data needs to leave the device
+* Connectivity: an Internet connection isn't required
+* Power consumption: network connections are power-hungry
+
+#### Deployment Workflow
+
+
+![image](images/image_42.png)
+
+
 ![image](images/image_17.png)
 
 ***TensorFlow JS***
-With TensorFlow.js you can develop ML models on your browser using only Node.js
+TensorFlow.js is a library for machine learning in JavaScript. With TensorFlow.js you can develop ML models in JavaScript, and use ML directly in the browser or in Node.js
+
 ![image](images/image_18.png)
+
+#### Deployment Workflow
+
+* You can import an existing, pre-trained model for inference. If you have an existing TensorFlow or Keras model you’ve previously trained offline, you can convert into TensorFlow.js format, and load it into the browser for inference.
+* You can re-train an imported model. As in the Pac-Man demo above, you can use transfer learning to augment an existing model trained offline using a small amount of data collected in the browser using a technique called Image Retraining. This is one way to train an accurate model quickly, using only a small amount of data.
+* Author models directly in the browser. You can also use TensorFlow.js to define, train, and run models entirely in the browser using Javascript and a high-level layers API. If you’re familiar with Keras, the high-level layers API should feel familiar.
+
+![image](images/image_43.png)
+
+TensorFlow.js is powered by WebGL and provides a high-level layers API for defining models, and a low-level API for linear algebra and automatic differentiation. TensorFlow.js supports importing TensorFlow SavedModels and Keras models.
+
+![image](images/image_44.png)
 
 
 
