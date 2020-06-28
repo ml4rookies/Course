@@ -261,6 +261,78 @@ Since not every country will appear in our dataset, we can refer to other countr
 ![image](images/image_29.png)
 
 
+### Overfitting and underfitting: from memorization to generalization
+
+#### Overfitting
+
+*In statistics, overfitting is "the production of an analysis that
+corresponds too closely or exactly to a particular set of data, and may,
+therefore, fail to fit additional data or predict future observations
+reliably"*
+
+![image](images/image_30.png)
+
+The green line represents an overfitted model and the black line
+represents a regularized model. While the green line best follows the
+training data, it is too dependent on that data and it is likely to have
+a higher error rate on new unseen data, compared to the black line.
+
+Hence, it is likely to have a higher error rate on the unseen data. On
+the other hand, the black line is misclassifying a few training dataset
+points, but it has picked up the general trend well and is more likely
+to perform better on the unseen data. (source: Wikipedia)
+
+![image](images/image_31.png)
+
+*The essence of overfitting is to have unknowingly extracted some of the
+residual variation (i.e. the noise) as if that variation represented
+underlying model structure.*
+
+![image](images/image_33.png)
+
+You train your model on the training set and you are classifying input
+into 'shoe' and 'not shoe'. You are most likely to classify the test
+data(high heels) as 'not shoe'. That is because you have overfitted in
+your understanding of what a shoe looks like because your model's
+training and experience in what shoes look like are hiking boots.
+
+An overfitted model extracts features/trends from the dataset that do
+not actually represent the generalization of the data structure. As a
+result of this, when unseen data is unable to fit in the expected
+structure, the model fails in predictions.
+
+#### Underfitting
+
+Another concept to understand is underfitting. Underfitting happens when
+a machine learning model is not sufficiently complex to fully capture
+the predictive power of the data on which it was trained. This can
+happen for a number of reasons:
+
+* model is not powerful enough
+* model is over-regularized
+* model has not been trained long enough(the network was unable to learn relevant patterns in the training data)
+
+![image](images/image_34.png)
+
+A simple straight line is a decent representation of the training data,
+but it doesn't fully render the underlying curved relationship between
+the variables x and y. Therefore, the model's outcomes will not be
+accurate when you apply it to new data
+
+#### From memorization to generalization
+
+An overfitted model extracts features/trends from the dataset that do
+not actually represent the generalization of the data structure. As a
+result of this, when unseen data is unable to fit in the expected
+structure, the model fails in predictions.
+
+On the other hand, using under fitted models for decision-making could
+be costly for businesses. For example, an under fitted model may suggest
+that you can always make better sales by spending more on marketing when
+in fact the model fails to capture a saturation effect (at some point,
+sales will flatten out no matter how much more you spend on marketing).
+([[Ref]](https://www.datarobot.com/wiki/underfitting/))
+
 
 
 ### Automated Machine Learning (AutoML)
