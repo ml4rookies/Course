@@ -180,6 +180,89 @@ Since we know that in Non-parametric models, the fit refers to the training data
 But we know that parametric models have a few parameters that make a fit. This can lead to underfitting, high bias. These parametric models can also have high variance if we increase the number of parameters. But there are several techniques which can help reduce high variance in parametric models like bagging, boosting and regularization.
 
 
+### Neural Networks
+
+A neural network is a series of algorithms that endeavours to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates.
+
+A Neural network comprises of :
+
+* Input units: The activity of the input units represents the raw information that is fed into the network. this also called input layer.
+* Hidden units: The activity of each hidden unit is determined by the activities of the input units and the weights on the connections between the input and the hidden units. this also called the hidden layer.
+* Output units: The behaviour of the output units depends on the activity of the hidden units and the weights between the hidden and output units. this also called output layer.
+
+![image](images/image_24.png)
+
+#### The basic unit
+
+The basic unit of computation in a neural network is the neuron, often called as a node or unit. It receives input from some other nodes, or from an external source and computes an output. 
+
+![image](images/image_25.png)
+
+Simply put, it calculates a “weighted sum” of its input, adds a bias and then decides whether it should be “fired” or not. Activation Function is used to decide whether or not a node should be activated. 
+
+A Deep Neural Network (DNN) has a similar structure, but it has two or more “hidden layers” of neurons that process inputs.
+
+![image](images/image_26.png)
+
+For a given input, different neurons are activated which collectively result in the predicted output for that input. The gif below helps to create an understanding of this concept. 
+
+
+
+
+How basic neural network is trained follows on two important concepts:
+
+* Gradient descent
+* Backpropagation  
+
+### Backpropagation
+
+In machine learning, backpropagation is a widely used algorithm in training feedforward neural networks for supervised learning. Generalizations of backpropagation exist for other artificial neural networks (ANNs), and for functions generally – a class of algorithms referred to generically as "backpropagation". In fitting a neural network, backpropagation computes the gradient of the loss function with respect to the weights of the network for a single input-output example, and does so efficiently, unlike a naive direct computation of the gradient with respect to each weight individually.
+
+
+### Gradient Descent
+
+Gradient descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. In machine learning, we use gradient descent to update the parameters of our model.
+
+
+### Feature Engineering
+
+In machine learning and pattern recognition, a feature is an individual measurable property or characteristic of a phenomenon being observed.
+
+Feature engineering is the process of using domain knowledge of the data to create features that make machine learning algorithms work.
+
+![image](images/image_27.png)
+
+#### Mapping numeric values
+
+![image](images/image_28.png)
+
+#### Mapping categorical values
+
+Categorical features have a discrete set of possible values. For example, there might be a feature called street_name with options that include:
+
+* Charleston Road
+* North Shoreline Boulevard
+* Shorebird Way
+* Rengstorff Avenue
+
+We can map each of these to an integer value and call this mapping a vocabulary.
+
+| street_name | Integer Mapping |
+| ------------- | ------------- |
+| Charleston Road | 0 |
+| North Shoreline Boulevard | 1 |
+| Shorebird Way | 2 |
+| Rengstorff Avenue | 3 |
+| Others | OOV |
+
+
+Since not every country will appear in our dataset, we can refer to other countries as OOV(out-of-vocabulary).
+
+![image](images/image_29.png)
+
+
+
+
 ### Automated Machine Learning (AutoML)
 
 Automated machine learning (AutoML) is the process of automating the process of applying machine learning to real-world problems. AutoML covers the complete pipeline from the raw dataset to the deployable machine learning model. AutoML was proposed as an artificial intelligence-based solution to the ever-growing challenge of applying machine learning. The high degree of automation in AutoML allows non-experts to make use of machine learning models and techniques without requiring to become an expert in this field first.
