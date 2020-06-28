@@ -125,9 +125,10 @@ We can define the error as the sum of the distance between each point and the li
 
 #### Classification
 Classification, as the name suggests, is a problem were given an input we have to predict a class value which is
-Finite
-Predefined
-Differentiable from other classes
+
+* Finite
+* Predefined
+* Differentiable from other classes
 
 An example is, you are given a problem to identify from a given image, whether itâ€™s an image of a dog or a cat. In this example the class values are finite. That is two in number. Predefined, the model cannot predict anything other than a cat or a dog. And both classes are different from each other.
 ![image](images/image_10.png)
@@ -154,7 +155,32 @@ As we saw in the example of linear regression above, there were two parameters â
 
 In contrast, a non-parametric algorithm uses a flexible number of parameters, and the number of (effective) parameters can grow with the sample size.  A non-parametric algorithm is computationally slower but it makes fewer assumptions about the data. K-nearest neighbour is a common example of a non-parametric algorithm.
 
-#### Automated Machine Learning (AutoML)
+### Bias and Variance
+
+#### Bias
+
+Bias is the error between predicted values and the correct value outputted by a model. 
+High bias accounts for large error and a more simplified model which is under fitted. Low bias refers to smaller errors. High bias leads to a high error on training and test data.
+Hence the inability for a machine learning model to capture the true relationship is called bias.
+
+#### Variance
+
+While the bias accounts for not being able to capture the relationship between training data and predictions, variance accounts for capturing only for the dataset it is being trained on. This is referred to as overfitting. 
+
+Hence a machine learning model that only predicts well for a dataset on which it is trained on is a high variance model. Hence these models only work for training data sets and not test datasets.
+
+![image](images/image_23.png)
+
+In this example, the blue dots are training dataset and green ones are test set. We can see that the left picture has high bias, but low variance. While the picture on the right has a low bias (0 bias) and high variance.
+
+#### Bias and Variance in Parametric and Non-Parametric Models
+
+Since we know that in Non-parametric models, the fit refers to the training data itself, hence the non-parametric models have very high variance.
+
+But we know that parametric models have a few parameters that make a fit. This can lead to underfitting, high bias. These parametric models can also have high variance if we increase the number of parameters. But there are several techniques which can help reduce high variance in parametric models like bagging, boosting and regularization.
+
+
+### Automated Machine Learning (AutoML)
 
 Automated machine learning (AutoML) is the process of automating the process of applying machine learning to real-world problems. AutoML covers the complete pipeline from the raw dataset to the deployable machine learning model. AutoML was proposed as an artificial intelligence-based solution to the ever-growing challenge of applying machine learning. The high degree of automation in AutoML allows non-experts to make use of machine learning models and techniques without requiring to become an expert in this field first.
 ![image](images/image_12.png)
