@@ -6,6 +6,8 @@
    * Some things to consider while using Colab
    * Other notebook environments
 * [Tensorflow Playground](#Tensorflow-Playground)
+* [Tensorflow Projector](#Tensorflow-Projector)
+* [What-If Tool](#What-If-Tool)
 * [Teacheable Machine](#Teachable-Machine)
 * [Kaggle](#Kaggle)
 * [MNIST and Fashion MNIST datasets](#MNIST-and-Fashion-MNIST-datasets)
@@ -91,6 +93,29 @@ TensorFlow playground allows to change the following **model hyperparmeters**, d
 | ![TensorFlow playground](./images/tensorflow-playground.png) | 
 |:--:| 
 | *Figure: TensorFlow playground* |
+
+## TensorFlow projector
+
+[TensorFlow projector](https://projector.tensorflow.org/) is an interactive visualization tool  of high dimensional embeddings. An embedding is a mathematical vector that captures different dimensions of the data (words, videos or soudns). TensorFlow projector allows to visualize and understand an embedding layer.
+
+For example: this tool allows you to search for specific words (`leagues` in the figure below), and will highlight words that are close in the embedding space. You can navigate thorugh views of the data, zoom or rotate to get the insights.
+
+| ![TensorFlow projector](./images/tensorflow-projector.png) | 
+|:--:| 
+| *Figure: TensorFlow projector* |
+
+## What-If Tool
+
+[What-If Tool](https://pair-code.github.io/what-if-tool/) is a tool created by Google Brain, that makes visualization of your data within a notebook, and allows you to udnerstand the output of your models. It supported any python framework, not only TensorFlow.
+
+Explainable AI (XAI) is a set of techniques of artificial intelligence that allow humans to understand the output of models, in contrast with the black box concept. One method of implementing XAI is using input attribution, which provides a score proportional to the feature's contribution to the model's prediction. For example, if a model output of a bank denies a mortgage to a customer, XAI will tell which feature (account balance, age, finantial status, ...) contributed most to the model's prediction. The What-If Tool does not generate attributions, however, you can use the What-if Tool with any feature attribution mechanism, including LIME, SHAP, integrated gradients and others.
+
+What-If tool is integrated with Cloud AI Platform and Explainability (see [here](https://cloud.google.com/blog/products/ai-machine-learning/introducing-the-what-if-tool-for-cloud-ai-platform-models)), thus you can make a call to What-If tool directly from your notebook.
+
+| ![What-If Tool](./images/what-if-tool.gif) | 
+|:--:| 
+| *Figure: What-If tool (source: What-If Tool page)* |
+
 
 ## Teachable machine
 
