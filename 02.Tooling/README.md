@@ -1,20 +1,21 @@
 # Tooling
 
-* [Colab](#Colab)
-   * Colab for data science and deep learning
-   * Using Colab with GitHub
-   * Some things to consider while using Colab
-   * Other notebook environments
-* [Tensorflow Playground](#Tensorflow-Playground)
-* [Tensorflow Projector](#Tensorflow-Projector)
-* [What-If Tool](#What-If-Tool)
-* [Teacheable Machine](#Teachable-Machine)
-* [Kaggle](#Kaggle)
-* [MNIST and Fashion MNIST datasets](#MNIST-and-Fashion-MNIST-datasets)
-* [TPU](#TPU)
-   * TPU types
-   * Architecture
-   * Edge TPU
+- [Tooling](#tooling)
+  - [Colab](#colab)
+    - [Colab for data science and deep learning](#colab-for-data-science-and-deep-learning)
+    - [Using Colab with GitHub](#using-colab-with-github)
+    - [Some things to consider while using Colab](#some-things-to-consider-while-using-colab)
+    - [Other notebook environments](#other-notebook-environments)
+  - [TensorFlow playground](#tensorflow-playground)
+  - [TensorFlow projector](#tensorflow-projector)
+  - [What-If Tool](#what-if-tool)
+  - [Teachable machine](#teachable-machine)
+  - [Kaggle](#kaggle)
+  - [MNIST and Fashion MNIST datasets](#mnist-and-fashion-mnist-datasets)
+  - [Introduction to TPU](#introduction-to-tpu)
+    - [TPU types](#tpu-types)
+    - [Architecture](#architecture)
+    - [Edge TPU](#edge-tpu)
 
 
 ## Colab
@@ -206,7 +207,7 @@ While the MXU inputs and outputs are 32-bit floating point values, the MXU perfo
 
 ### Edge TPU
 
-The Coral Edge TPU is an inference accelerator, targetting at making inference at devices and IoT applications. It's optimized for vision applications and convolutional neural networks. It follows the same architecture as a Cloud TPU, but requires quantized TensorFlow Lite models.
+The Coral Edge TPU is an inference accelerator, targeting at making inference at devices and IoT applications. It's optimized for vision applications and convolutional neural networks. It follows the same architecture as a Cloud TPU, but requires quantized TensorFlow Lite models.
 More information can be found at [Coral web page](https://coral.ai/products/)
 
 Back to the [Index](../README.md)
