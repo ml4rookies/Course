@@ -80,7 +80,7 @@ You can also easily save a copy of your Colab notebook to Github by using File >
 
 ## TensorFlow playground
 
-[TensorFlow playground](https://playground.tensorflow.org/) is an interactive visualization of neural networks, written in TypeScript using d3.js. The oen-source project, called **deep playground** is available in Github, and open for contributions.
+[TensorFlow playground](https://playground.tensorflow.org/) is an interactive visualization of neural networks, written in TypeScript using d3.js. The open-source project, called **deep playground** is available in Github, and open for contributions.
 
 TensorFlow playground allows to change the following **model hyperparmeters**, directly in the user interface:
 * Learning rate: between 0.00001 and 10
@@ -206,7 +206,7 @@ While the MXU inputs and outputs are 32-bit floating point values, the MXU perfo
 
 ### Edge TPU
 
-The Coral Edge TPU is an inference accelerator, targetting at making inference at devices and IoT applications. It's optimized for vision applications and convolutional neural networks. It follows the same architecture as a Cloud TPU, but requires quantized TensorFlow Lite models.
+The Coral Edge TPU is an inference accelerator, targeting at making inference at devices and IoT applications. It's optimized for vision applications and convolutional neural networks. It follows the same architecture as a Cloud TPU, but requires quantized TensorFlow Lite models.
 More information can be found at [Coral web page](https://coral.ai/products/)
 
 Back to the [Index](../README.md)
