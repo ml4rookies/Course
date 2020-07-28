@@ -1,21 +1,20 @@
 # Tooling
 
-- [Tooling](#tooling)
-  - [Colab](#colab)
-    - [Colab for data science and deep learning](#colab-for-data-science-and-deep-learning)
-    - [Using Colab with GitHub](#using-colab-with-github)
-    - [Some things to consider while using Colab](#some-things-to-consider-while-using-colab)
-    - [Other notebook environments](#other-notebook-environments)
-  - [TensorFlow playground](#tensorflow-playground)
-  - [TensorFlow projector](#tensorflow-projector)
-  - [What-If Tool](#what-if-tool)
-  - [Teachable machine](#teachable-machine)
-  - [Kaggle](#kaggle)
-  - [MNIST and Fashion MNIST datasets](#mnist-and-fashion-mnist-datasets)
-  - [Introduction to TPU](#introduction-to-tpu)
-    - [TPU types](#tpu-types)
-    - [Architecture](#architecture)
-    - [Edge TPU](#edge-tpu)
+* [Colab](#Colab)
+   * Colab for data science and deep learning
+   * Using Colab with GitHub
+   * Some things to consider while using Colab
+   * Other notebook environments
+* [Tensorflow Playground](#Tensorflow-Playground)
+* [Tensorflow Projector](#Tensorflow-Projector)
+* [What-If Tool](#What-If-Tool)
+* [Teacheable Machine](#Teachable-Machine)
+* [Kaggle](#Kaggle)
+* [MNIST and Fashion MNIST datasets](#MNIST-and-Fashion-MNIST-datasets)
+* [TPU](#TPU)
+   * TPU types
+   * Architecture
+   * Edge TPU
 
 
 ## Colab
