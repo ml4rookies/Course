@@ -80,7 +80,7 @@ You can also easily save a copy of your Colab notebook to Github by using File >
 
 ## TensorFlow playground
 
-[TensorFlow playground](https://playground.tensorflow.org/) is an interactive visualization of neural networks, written in TypeScript using d3.js. The oen-source project, called **deep playground** is available in Github, and open for contributions.
+[TensorFlow playground](https://playground.tensorflow.org/) is an interactive visualization of neural networks, written in TypeScript using d3.js. The open-source project, called **deep playground** is available in Github, and open for contributions.
 
 TensorFlow playground allows to change the following **model hyperparmeters**, directly in the user interface:
 * Learning rate: between 0.00001 and 10
