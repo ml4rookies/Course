@@ -14,7 +14,11 @@ Back to the [Index](../README.md)
 
 # ML Explainability
 
+![image](images/image_1.png)
+
 As the compute resources and dataset sizes have increased overtime, more complex non-near models have been developed. We have seen a shift from the traditional rule based/heuristics to linear models, decision trees, followed by deep models and ensembles to even the concept of meta-learning where models are created by other models.
+
+![image](images/image_2.png)
 
 Although this advancement has brought a paradigm shift along multiple dimensions allowing models to have more:
 - Expressiveness
@@ -44,12 +48,13 @@ Some of the simple definitions for ML explainability are as follows:
        
 ### How ML explainability fits into the ML lifecycle:
 
+![image](images/image_3.png)
 
 # Why developers need to understand AI principles
 
 AI and other advanced technologies have incredible potential to empower people, widely benefit current and future generations, and work for the common good. But these same technologies also raise important challenges that we need to address clearly, thoughtfully, and affirmatively. Ai principles set out commitment to develop technology responsibly and establish specific application areas which should not be pursued.
 
-AI Principles by Google:
+[[AI Principles by Google:]](https://ai.google/principles/)
 - Be socially beneficial
 - Avoid creating or reinforcing unfair bias.
 - Be built and tested for safety
