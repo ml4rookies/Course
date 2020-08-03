@@ -171,7 +171,7 @@ There are different TPU devices depending on their capability:
 * **TPU pods**, which are clusters of TPU devices that are connected to each other over dedicated high-speed networks, i.e., more efficient than connecting several independent TPU together in a single VM. For example: TPU v2-32 to 512 where number (32 to 512) refers to number of cores in the pod, or TPU v3-32 to 2048 (up to 2048 TPUs! in the pod).
 
 
-| ![Cloud TPU Pod v3](https://cloud.google.com/images/products/tpu/google-cloud-ai.png) | 
+| ![Cloud TPU Pod v3](./images/google-cloud-ai.png) | 
 |:--:| 
 | *Figure: Cloud TPU Pod v3. Source: cloud.google.com/tpu* |
 
@@ -195,7 +195,7 @@ Note TPU v2-8 **can be used for free** in Colab, while the rest can be used from
 
 The TPU architecture is based on a systolic array, that contains  256 × 256 = total 65,536 ALUs to perform matrix multiplication operations of inputs and weights in parallel:
 
-| ![Systolic array architecture](https://storage.googleapis.com/gweb-cloudblog-publish/original_images/Systolic_Array_for_Neural_Network_2g8b7.GIF) | 
+| ![Systolic array architecture](./images/Systolic_Array_for_Neural_Network_2g8b7.GIF) | 
 |:--:| 
 | *Figure: Systolic array architecture. Source: Google blog* |
 
