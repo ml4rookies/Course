@@ -195,7 +195,7 @@ Note TPU v2-8 **can be used for free** in Colab, while the rest can be used from
 
 The TPU architecture is based on a systolic array, that contains  256 × 256 = total 65,536 ALUs to perform matrix multiplication operations of inputs and weights in parallel:
 
-| ![Systolic array architecture](./images/Systolic_Array_for_Neural_Network_2g8b7.GIF) | 
+| ![Systolic array architecture](./images/Systolic_Array_for_Neural_Network_2g8b7.gif) | 
 |:--:| 
 | *Figure: Systolic array architecture. Source: Google blog* |
 
