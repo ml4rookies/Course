@@ -54,7 +54,7 @@ plt.show()
 ```
 
 
-| ![Using numpy and matplotlib with Colab](./images/colab-matplotlib.png) | 
+| ![Using numpy and matplotlib with Colab](images/colab-matplotlib.png) | 
 |:--:| 
 | *Figure: Using numpy and matplotlib with Colab* |
 
@@ -90,7 +90,7 @@ TensorFlow playground allows to change the following **model hyperparmeters**, d
 * Problem type: regression or classification
 * Numer of hidden layers
 
-| ![TensorFlow playground](./images/tensorflow-playground.png) | 
+| ![TensorFlow playground](images/tensorflow-playground.png) | 
 |:--:| 
 | *Figure: TensorFlow playground* |
 
@@ -100,7 +100,7 @@ TensorFlow playground allows to change the following **model hyperparmeters**, d
 
 For example: this tool allows you to search for specific words (`leagues` in the figure below), and will highlight words that are close in the embedding space. You can navigate thorugh views of the data, zoom or rotate to get the insights.
 
-| ![TensorFlow projector](./images/tensorflow-projector.png) | 
+| ![TensorFlow projector](images/tensorflow-projector.png) | 
 |:--:| 
 | *Figure: TensorFlow projector* |
 
@@ -112,7 +112,7 @@ Explainable AI (XAI) is a set of techniques of artificial intelligence that allo
 
 What-If tool is integrated with Cloud AI Platform and Explainability (see [here](https://cloud.google.com/blog/products/ai-machine-learning/introducing-the-what-if-tool-for-cloud-ai-platform-models)), thus you can make a call to What-If tool directly from your notebook.
 
-| ![What-If Tool](./images/what-if-tool.gif) | 
+| ![What-If Tool](images/what-if-tool.gif) | 
 |:--:| 
 | *Figure: What-If tool (source: What-If Tool page)* |
 
@@ -130,7 +130,7 @@ Teachable Machine uses Tensorflow.js, a library for machine learning in Javascri
 
 After training, you can save your project entirely to Google Drive, in a .zip file that contains all the samples in each of your classes to Drive. Or you can download your model to use it externally.
 
-| ![Teachable machine](./images/teachable-machine.png) | 
+| ![Teachable machine](images/teachable-machine.png) | 
 |:--:| 
 | *Figure: Teachable machine* |
 
@@ -171,7 +171,7 @@ There are different TPU devices depending on their capability:
 * **TPU pods**, which are clusters of TPU devices that are connected to each other over dedicated high-speed networks, i.e., more efficient than connecting several independent TPU together in a single VM. For example: TPU v2-32 to 512 where number (32 to 512) refers to number of cores in the pod, or TPU v3-32 to 2048 (up to 2048 TPUs! in the pod).
 
 
-| ![Cloud TPU Pod v3](./images/google-cloud-ai.png) | 
+| ![Cloud TPU Pod v3](images/google-cloud-ai.png) | 
 |:--:| 
 | *Figure: Cloud TPU Pod v3. Source: cloud.google.com/tpu* |
 
@@ -195,7 +195,7 @@ Note TPU v2-8 **can be used for free** in Colab, while the rest can be used from
 
 The TPU architecture is based on a systolic array, that contains  256 × 256 = total 65,536 ALUs to perform matrix multiplication operations of inputs and weights in parallel:
 
-| ![Systolic array architecture](./images/Systolic_Array_for_Neural_Network_2g8b7.gif) | 
+| ![Systolic array architecture](images/Systolic_Array_for_Neural_Network_2g8b7.gif) | 
 |:--:| 
 | *Figure: Systolic array architecture. Source: Google blog* |
 

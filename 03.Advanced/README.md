@@ -54,14 +54,54 @@ Some of the simple definitions for ML explainability are as follows:
 
 AI and other advanced technologies have incredible potential to empower people, widely benefit current and future generations, and work for the common good. But these same technologies also raise important challenges that we need to address clearly, thoughtfully, and affirmatively. Ai principles set out commitment to develop technology responsibly and establish specific application areas which should not be pursued.
 
-[[AI Principles by Google:]](https://ai.google/principles/)
-- Be socially beneficial
-- Avoid creating or reinforcing unfair bias.
-- Be built and tested for safety
-- Be accountable to people
-- Incorporate privacy design principles
-- Uphold high standards of scientific excellence
-- Be made available for uses that accord with these principle
+## AI Principles by Google 
+
+[[AI Principles by Google]](https://ai.google/principles/) is a concrete example of how a company might foster ethical principles. These principles set out Google's commitment to develop technology responsibly and establish specific application areas the company will not pursue. According these principles, Google will assess AI applications in view of the following objectives:
+
+![image](images/image_4.jpg)
+
+**Be socially beneficial**
+
+The expanded reach of new technologies increasingly touches society as a whole. Advances in AI will have transformative impacts in a wide range of fields, including healthcare, security, energy, transportation, manufacturing, and entertainment. As we consider potential development and uses of AI technologies, we will take into account a broad range of social and economic factors, and will proceed where we believe that the overall likely benefits substantially exceed the foreseeable risks and downsides.
+
+![image](images/image_5.jpg)
+
+**Avoid creating or reinforcing unfair bias**
+
+AI algorithms and datasets can reflect, reinforce, or reduce unfair biases. We recognize that distinguishing fair from unfair biases is not always simple, and differs across cultures and societies. We will seek to avoid unjust impacts on people, particularly those related to sensitive characteristics such as race, ethnicity, gender, nationality, income, sexual orientation, ability, and political or religious belief.
+
+![image](images/image_6.jpg)
+
+**Be built and tested for safety**
+
+We will continue to develop and apply strong safety and security practices to avoid unintended results that create risks of harm. We will design our AI systems to be appropriately cautious, and seek to develop them in accordance with best practices in AI safety research. In appropriate cases, we will test AI technologies in constrained environments and monitor their operation after deployment.
+
+![image](images/image_7.jpg)
+
+**Be accountable to people**
+
+We will design AI systems that provide appropriate opportunities for feedback, relevant explanations, and appeal. Our AI technologies will be subject to appropriate human direction and control.
+
+![image](images/image_8.jpg)
+
+**Incorporate privacy design principles**
+
+We will incorporate our privacy principles in the development and use of our AI technologies. We will give opportunity for notice and consent, encourage architectures with privacy safeguards, and provide appropriate transparency and control over the use of data.
+
+![image](images/image_9.jpg)
+
+**Uphold high standards of scientific excellence**
+
+Technological innovation is rooted in the scientific method and a commitment to open inquiry, intellectual rigor, integrity, and collaboration. AI tools have the potential to unlock new realms of scientific research and knowledge in critical domains like biology, chemistry, medicine, and environmental sciences. We aspire to high standards of scientific excellence as we work to progress AI development.
+
+**Be made available for uses that accord with these principle**
+
+Many technologies have multiple uses. We will work to limit potentially harmful or abusive applications. As we develop and deploy AI technologies, we will evaluate likely uses in light of the following factors:
+
+  * Primary purpose and use: the primary purpose and likely use of a technology and application, including how closely the solution is related to or adaptable to a harmful use
+  * Nature and uniqueness: whether we are making available technology that is unique or more generally available
+  * Scale: whether the use of this technology will have significant impact
+  * Nature of Google’s involvement: whether we are providing general-purpose tools, integrating tools for customers, or developing custom solutions
 
 # TFData
 
