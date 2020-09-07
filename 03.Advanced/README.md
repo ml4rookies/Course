@@ -103,7 +103,105 @@ Many technologies have multiple uses. We will work to limit potentially harmful 
   * Scale: whether the use of this technology will have significant impact
   * Nature of Google’s involvement: whether we are providing general-purpose tools, integrating tools for customers, or developing custom solutions
 
-# TFData
+# tf.data
 
-# Pipelines
+`tf.data` is a TensorFlow class that allows to build complex data pipelines from simple elements stored for example in disk or memory. It is able to handle large amounts of data,r ead from different data formats and perform complex transformations.
+
+`tf.data.Dataset` is an abstraction that includes a sequence of elements, where each element can contain multiple information. For example, in the case of images, an element contains the image as well as the label.
+
+There are two ways to create a `tf.data.Dataset`:
+
+* **Directly from the source**, for example from memory or files. In the case of creating the dataset from memory, you can use `tf.data.Datasets.from_tensor_slices`, which creates a `tf.data.Dataset` whose elements are slices of the given tensors:
+```python
+# Slicing a 2D tensor produces 1D tensor elements.
+dataset = tf.data.Dataset.from_tensor_slices([[1, 2], [3, 4]])
+list(dataset.as_numpy_iterator())
+```
+
+* **From a transformation**. Once you have a Dataset object, you can transform it into a new Dataset by chaining method calls on the `tf.data.Dataset object`. For example, you can apply per-element transformations with `tf.data.Datasets.map` (or multi-element transformations such as `tf.data.Dataset.batch`):
+
+```python
+dataset = Dataset.range(1, 6)  # [ 1, 2, 3, 4, 5 ]
+dataset = dataset.map(lambda x: x + 1)  # [ 2, 3, 4, 5, 6 ]
+```
+
+More information on `tf.data.Datasets.map` can be found [here](https://www.tensorflow.org/api_docs/python/tf/data/Dataset?version=nightly#map
+)
+
+
+You can read **numpy arrays** very easily with `tf.data.Dataset`. Assuming you have the an array of images and their labels, you can just use
+`tf.data.Dataset.from_tensor_slices` to create a `tf.data.Dataset` from numpy arrays:
+```python
+train_dataset = tf.data.Dataset.from_tensor_slices((train_examples, train_labels))
+test_dataset = tf.data.Dataset.from_tensor_slices((test_examples, test_labels))
+```
+
+`tf.data.Dataset` also supports functions to shuffle and batch the data:
+```python
+BATCH_SIZE = 64
+SHUFFLE_BUFFER_SIZE = 100
+
+train_dataset = train_dataset.shuffle(SHUFFLE_BUFFER_SIZE).batch(BATCH_SIZE)
+test_dataset = test_dataset.batch(BATCH_SIZE)
+```
+
+
+Another way if you want to use numpy arrays instead of `tf.data.Datasets` or `tf.Tensors` is by passing the return value to `tfds.as_numpy`. 
+
+```python
+cats_vs_dogs = tfds.builder('cats_vs_dogs')
+
+(raw_train, raw_test), metadata = tfds.load(
+    'cats_vs_dogs',
+    split=['train[:90%]', 'train[90%:]'],
+    with_info=True)
+
+# And convert the Dataset to NumPy arrays if you'd like
+for example in tfds.as_numpy(raw_train):
+  image = example['image']
+```
+
+# MLOps and Pipelines
+
+MLOps is the practice of applying DevOps practices to help automate, manage, and audit machine learning (ML) workflows. ML workflows include steps to:
+
+* Prepare, analyze, and transform data.
+* Train and evaluate a model.
+* Deploy trained models to production.
+* Track ML artifacts and understand their dependencies.
+
+TFX makes it easier to implement MLOps by providing a toolkit that helps you orchestrate your ML process on various orchestrators, such as: Apache Airflow, Apache Beam, and Kubeflow Pipelines. TensorFlow Extended (TFX) is an end-to-end platform for deploying production ML pipelines, and provides the following:
+
+* **TFX pipelines:** a pipeline is a portable implementation of an ML workflow. TFX pipelines is a toolkit for building ML pipelines. 
+
+* **TFX components:** components that you can use as a part of a pipeline.
+
+* **TFX libraries:** base functionality for many of the standard components.
+
+
+## TFX pipelines
+
+A TFX pipeline can run on various orchestrators, such as: Apache Airflow, Apache Beam, and Kubeflow Pipelines. A **pipeline** is composed of component instances and input parameters.
+
+Component instances produce artifacts as outputs and typically depend on artifacts produced by upstream component instances as inputs. 
+
+## TFX standard components
+
+A TFX pipeline is a **sequence of components** that implement an ML pipeline which is specifically designed for scalable, high-performance machine learning tasks. That includes modeling, training, serving inference, and managing deployments to online, native mobile, and JavaScript targets.
+
+## TFX libraries
+
+Libraries which provide the base functionality for many of the standard components. You can use the **TFX libraries** to add this functionality to your own custom components, or use them separately. Libraries include:
+
+* **TensorFlow Data Validation (TFDV)** is a library for analyzing and validating machine learning data. It is designed to be highly scalable and to work well with TensorFlow and TFX.
+
+* **TensorFlow Transform (TFT)** is a library for preprocessing data with TensorFlow.
+
+* **TensorFlow Model Analysis (TFMA)** is a library for evaluating TensorFlow models. It is used along with TensorFlow to create an EvalSavedModel, which becomes the basis for its analysis. It allows users to evaluate their models on large amounts of data in a distributed manner, using the same metrics defined in their trainer. 
+
+* **TensorFlow Metadata (TFMD)** provides standard representations for metadata that are useful when training machine learning models with TensorFlow. The metadata may be produced by hand or automatically during input data analysis, and may be consumed for data validation, exploration, and transformation. 
+
+* **ML Metadata (MLMD)** is a library for recording and retrieving metadata associated with ML developer and data scientist workflows. Most often the metadata uses TFMD representations. MLMD manages persistence using SQL-Lite, MySQL, and other similar data stores.
+
+* **TensorFlow Serving** is a flexible, high-performance serving system for machine learning models, designed for production environments. TensorFlow Serving makes it easy to deploy new algorithms and experiments, while keeping the same server architecture and APIs.
 
