@@ -151,3 +151,38 @@ Doing Machine Learning is an iterative process and requires a specific mindset: 
 
 
 _Source: _[https://developers.google.com/machine-learning/problem-framing](https://developers.google.com/machine-learning/problem-framing)
+
+
+# Why study Machine Learning?
+
+Machine Learning is a topic that has been steadily increasing in popularity over the 5 years.
+
+
+![alt_text](images/image8.png "image_tooltip")
+
+
+Source: [https://trends.google.com/trends/explore?date=today%205-y&geo=US&q=machine%20learning](https://trends.google.com/trends/explore?date=today%205-y&geo=US&q=machine%20learning) 
+
+91% of the executives surveyed by [Forbes Insights](https://www.forbes.com/insights-delltechnologies/ai-a-cxo-strategy-guide/) believe that AI will help them outplace their competition. As they quote in their report “If there’s one thing you take away from this exploration of AI data strategies, it should be this: It’s not too late to get started, yet time is of the essence”. 
+
+There are many reasons for studying Machine Learning, such as it improves your daily efficiency and life-style (voice assistants, chat bots, self-driving cars etc), it helps with better understanding your customers, brings you better career opportunities (check report from the [World Economic forum](https://www.forbes.com/sites/amitchowdhry/2018/09/18/artificial-intelligence-to-create-58-million-new-jobs-by-2022-says-report/#5055eb0e4d4b)), and most importantly: it is here to stay.
+
+
+![alt_text](images/image9.png "image_tooltip")
+
+
+Source: [https://studymachinelearning.com/wp-content/uploads/2019/08/application_ML.png](https://studymachinelearning.com/wp-content/uploads/2019/08/application_ML.png) 
+
+Nowadays Machine learning is almost everywhere around us - changing and shaping our lives. All the Big players in the field like Google, IBM, Microsoft, Apple, Salesforce, Tesla, Baidu etc are already leveraging its benefits, when will you?
+
+
+# What will you learn in this course?
+
+If you have a real interest in Machine Learning, but no experience or basic experience in the field, then this course is for you! We believe in the power of democratizing Machine Learning to all the eager minds, that’s why this course was conceived for not-so-technical newcomers to the Machine Learning endeavour!
+
+The course is structured in five sections: 
+
+
+*   The first _three_ sections will give you a foundational understanding of what machine learning is, why machine learning is important, how it works. It will also make you familiar with one of the most popular frameworks in the market, Tensorflow, and with the de facto workflow for solving machine learning tasks. If this is your first encounter with Machine Learning make sure you don’t skip these first three sections, before moving to the more advanced part.
+*   The last _two_ sections in the course are structured around more advanced topics, that will scale up not only your conceptual understanding: the quality of training data, explainability and principles in Machine Learning, but also your technical workflow, through the use of advanced Tensorflow toolsets, such as: pipelines, libraries and more. It will also introduce you to the complementary topics such as: Reinforcement Learning and cloud-based tools that can make your Machine Learning workflow more efficient and effective, such as: Auto ML, Cloud ML APIs and others.
+
