@@ -41,15 +41,11 @@ Machine Learning is a subfield of AI that looks at classical programming from a 
 
 The classical way of doing programming is to input these rules into a program along with data to be processed and get some answers.
 
-
-![alt_text](images/image2.png "image_tooltip")
-
+![alt_text](images/image3.png "traditional programming")
 
 The new way of programming in the machine learning paradigm is to simply change the axes. Instead of providing the rules, the programmer inputs the data and the answers expected from the data (labels), and the machine will discover (or infer) the rules.
 
-
-![alt_text](images/image3.png "image_tooltip")
-
+![alt_text](images/image2.png "machine learning")
 
 We say that a machine learning system is _trained_, rather than programmed. This “training” is similar to the way a child learns a new concept, like what a dog is. The parent shows the child several examples (or data) of dogs, points out that “this is a dog” (answer) and congratulates them when they do it correctly.
 
